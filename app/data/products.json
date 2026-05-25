@@ -1,0 +1,802 @@
+[
+  {
+    "id": "elfbar600",
+    "name": "Elf Bar 600",
+    "cat": "disposable",
+    "badge": "hot",
+    "img": "https://yartsland.co.uk/images/elf-bar-600.webp",
+    "desc": "UK best-selling disposable. 600 puffs, 20mg nic salt.",
+    "slug": "elf-bar-600",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 5.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 14.99
+      },
+      {
+        "l": "10 Pack",
+        "p": 44.99
+      }
+    ]
+  },
+  {
+    "id": "lostmarybm6000",
+    "name": "Lost Mary BM6000",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/lost-mary-bm6000.webp",
+    "desc": "6,000 puffs, rechargeable, bold fruity flavours.",
+    "slug": "lost-mary-bm6000",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 20.99
+      },
+      {
+        "l": "5 Pack",
+        "p": 32.99
+      }
+    ]
+  },
+  {
+    "id": "skecrystal",
+    "name": "SKE Crystal Bar",
+    "cat": "disposable",
+    "badge": "sale",
+    "img": "https://yartsland.co.uk/images/ske-crystal-bar.webp",
+    "desc": "Crystal pod for purer flavour. 600 puffs.",
+    "slug": "ske-crystal-bar",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 5.49
+      },
+      {
+        "l": "5 Pack",
+        "p": 22.99
+      },
+      {
+        "l": "10 Pack",
+        "p": 39.99
+      }
+    ]
+  },
+  {
+    "id": "ivgbar",
+    "name": "IVG Bar Plus",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/ivg-bar-plus.jpg",
+    "desc": "Award-winning British brand. 800 puffs.",
+    "slug": "ivg-bar-plus",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 6.49
+      },
+      {
+        "l": "3 Pack",
+        "p": 15.99
+      },
+      {
+        "l": "10 Pack",
+        "p": 45.99
+      }
+    ]
+  },
+  {
+    "id": "hayatipro",
+    "name": "Hayati Pro Ultra 25K",
+    "cat": "disposable",
+    "badge": "hot",
+    "img": "https://yartsland.co.uk/images/hayati-pro-ultra-25k.webp",
+    "desc": "25,000 puffs. TPD compliant big-puff device.",
+    "slug": "hayati-pro-ultra-25k",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 14.99
+      },
+      {
+        "l": "2 Pack",
+        "p": 26.99
+      },
+      {
+        "l": "5 Pack",
+        "p": 59.99
+      }
+    ]
+  },
+  {
+    "id": "hayatipromax",
+    "name": "Hayati Pro Max+",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/hayati-pro-max.webp",
+    "desc": "6,000+ puffs, OLED smart screen, 850mAh.",
+    "slug": "hayati-pro-max",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 9.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 26.99
+      },
+      {
+        "l": "5 Pack",
+        "p": 42.99
+      }
+    ]
+  },
+  {
+    "id": "snowwolf",
+    "name": "Snowwolf Vape",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/snow-wolf-vape.webp",
+    "desc": "9,000 puffs, Hip Hop design, digital display.",
+    "slug": "snow-wolf-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 12.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 34.99
+      },
+      {
+        "l": "5 Pack",
+        "p": 54.99
+      }
+    ]
+  },
+  {
+    "id": "tornado",
+    "name": "Tornado Vape",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/tornado-vape.webp",
+    "desc": "Transparent design, digital display, Black Ice.",
+    "slug": "tornado-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 12.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 34.99
+      },
+      {
+        "l": "5 Pack",
+        "p": 54.99
+      }
+    ]
+  },
+  {
+    "id": "xros5",
+    "name": "Vaporesso XROS 5",
+    "cat": "pod-kit",
+    "badge": "hot",
+    "img": "https://yartsland.co.uk/images/vaporesso-xros5.webp",
+    "desc": "UK #1 pod kit. 1500mAh, 80% charge in 20min.",
+    "slug": "vaporesso-xros5",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 21.99
+      },
+      {
+        "l": "+ 2 Pods",
+        "p": 28.99
+      }
+    ]
+  },
+  {
+    "id": "oxvaxlim3",
+    "name": "OXVA XLIM Pro 3",
+    "cat": "pod-kit",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/oxva-xlim-pro-3.webp",
+    "desc": "Photon chipset — 80% flavour at 20% battery.",
+    "slug": "oxva-xlim-pro-3",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 24.99
+      },
+      {
+        "l": "+ 2 Pods",
+        "p": 31.99
+      }
+    ]
+  },
+  {
+    "id": "oxvaxlim2",
+    "name": "OXVA XLIM Pro 2",
+    "cat": "pod-kit",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/oxva-xlim-pro-2.webp",
+    "desc": "X-Treme Flavor, top-fill, carbon fibre panel.",
+    "slug": "oxva-xlim-pro-2",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 19.99
+      },
+      {
+        "l": "+ 2 Pods",
+        "p": 26.99
+      }
+    ]
+  },
+  {
+    "id": "caliburng5",
+    "name": "Uwell Caliburn G5",
+    "cat": "pod-kit",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/uwell-caliburn-g5.jpg",
+    "desc": "Pro-FOCS flavour technology. Best taste clarity.",
+    "slug": "uwell-caliburn-g5",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 19.99
+      },
+      {
+        "l": "+ 2 Pods",
+        "p": 25.99
+      }
+    ]
+  },
+  {
+    "id": "aegishero5",
+    "name": "Geekvape Aegis Hero 5",
+    "cat": "pod-kit",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/geekvape-aegis-hero-5.webp",
+    "desc": "IP68 waterproof, shockproof, dustproof.",
+    "slug": "geekvape-aegis-hero-5",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 29.99
+      },
+      {
+        "l": "Bundle",
+        "p": 36.99
+      }
+    ]
+  },
+  {
+    "id": "heisenberg",
+    "name": "Vampire Vape Heisenberg",
+    "cat": "eliquid",
+    "badge": "hot",
+    "img": "https://yartsland.co.uk/images/vampire-vape-heisenberg.webp",
+    "desc": "UK most iconic e-liquid. Berry and menthol.",
+    "slug": "vampire-vape-heisenberg",
+    "variants": [
+      {
+        "l": "10ml Nic Salt",
+        "p": 3.99
+      },
+      {
+        "l": "50ml Shortfill",
+        "p": 10.99
+      }
+    ]
+  },
+  {
+    "id": "elfliq",
+    "name": "Elf Bar Elfliq Nic Salt",
+    "cat": "eliquid",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/elf-bar-elfliq.webp",
+    "desc": "Exact Elf Bar flavours in 10ml. 20mg nic salt.",
+    "slug": "elf-bar-elfliq",
+    "variants": [
+      {
+        "l": "10ml x1",
+        "p": 3.99
+      },
+      {
+        "l": "10ml x3",
+        "p": 9.99
+      },
+      {
+        "l": "10ml x5",
+        "p": 14.99
+      }
+    ]
+  },
+  {
+    "id": "drifter",
+    "name": "Drifter Bar Salt 10ml",
+    "cat": "eliquid",
+    "badge": "sale",
+    "img": "https://yartsland.co.uk/images/drifter-bar-salt.webp",
+    "desc": "Double-concentrate bold flavours. Best value.",
+    "slug": "drifter-bar-salt",
+    "variants": [
+      {
+        "l": "10ml x1",
+        "p": 2.99
+      },
+      {
+        "l": "10ml x5",
+        "p": 11.99
+      },
+      {
+        "l": "10ml x10",
+        "p": 19.99
+      }
+    ]
+  },
+  {
+    "id": "eluxsalts",
+    "name": "Elux Legend Nic Salts",
+    "cat": "eliquid",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/elux-nic-salts.webp",
+    "desc": "Double-concentrated Elux Legend flavours. 20mg.",
+    "slug": "elux-nic-salts",
+    "variants": [
+      {
+        "l": "10ml x1",
+        "p": 3.49
+      },
+      {
+        "l": "10ml x3",
+        "p": 8.99
+      },
+      {
+        "l": "10ml x5",
+        "p": 13.99
+      }
+    ]
+  },
+  {
+    "id": "bundlestarter",
+    "name": "Starter Bundle",
+    "cat": "bundle",
+    "badge": "bundle",
+    "img": "https://yartsland.co.uk/images/starter-bundle.webp",
+    "desc": "Elf Bar 600 + Vaporesso XROS 5 + 3x Nic Salts.",
+    "slug": "starter-bundle",
+    "variants": [
+      {
+        "l": "Bundle",
+        "p": 34.99
+      },
+      {
+        "l": "Bundle x2",
+        "p": 62.99
+      }
+    ]
+  },
+  {
+    "id": "bundleheavy",
+    "name": "Heavy Vaper Bundle",
+    "cat": "bundle",
+    "badge": "bundle",
+    "img": "https://yartsland.co.uk/images/heavy-vaper-bundle.avif",
+    "desc": "Hayati 25K + Vaporesso XROS 5 + 5x E-Liquids.",
+    "slug": "heavy-vaper-bundle",
+    "variants": [
+      {
+        "l": "Bundle",
+        "p": 49.99
+      }
+    ]
+  },
+  {
+    "id": "acecarts",
+    "name": "Ace Carts",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/1.webp",
+    "desc": "Premium THC cart range with smooth draws and full flavour.",
+    "slug": "ace-carts",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 21.99
+      }
+    ]
+  },
+  {
+    "id": "boutiqswitch",
+    "name": "Boutiq Switch",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/2.jpg",
+    "desc": "High-performance disposable vape with crisp flavour and easy use.",
+    "slug": "boutiq-switch",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.49
+      },
+      {
+        "l": "3 Pack",
+        "p": 23.99
+      }
+    ]
+  },
+  {
+    "id": "cookiescarts",
+    "name": "Cookies Carts",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/3.webp",
+    "desc": "Authentic Cookies cartridge flavours in a compact, travel-friendly design.",
+    "slug": "cookies-carts",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.49
+      },
+      {
+        "l": "3 Pack",
+        "p": 20.99
+      }
+    ]
+  },
+  {
+    "id": "dabwoods",
+    "name": "Dabwoods",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/4.jpg",
+    "desc": "Premium disposable carts built for rich flavour and reliable performance.",
+    "slug": "dabwoods",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 25.99
+      }
+    ]
+  },
+  {
+    "id": "dmtvapen",
+    "name": "DMT Vape Pen",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/5.jpg",
+    "desc": "Slim battery vape pen with smooth hits and long-lasting battery life.",
+    "slug": "dmt-vape-pen",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 9.49
+      },
+      {
+        "l": "2 Pack",
+        "p": 17.99
+      }
+    ]
+  },
+  {
+    "id": "frydcarts",
+    "name": "Fryd Carts",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/6.jpg",
+    "desc": "Popular carts delivering consistent flavour and effortless use.",
+    "slug": "fryd-carts",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.29
+      },
+      {
+        "l": "3 Pack",
+        "p": 19.99
+      }
+    ]
+  },
+  {
+    "id": "jeeterjuice",
+    "name": "Jeeter Juice",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/7.webp",
+    "desc": "Premium juice carts with cult-favourite strain blends.",
+    "slug": "jeeter-juice",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.29
+      },
+      {
+        "l": "3 Pack",
+        "p": 22.99
+      }
+    ]
+  },
+  {
+    "id": "jungleboys",
+    "name": "Jungle Boys",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/8.webp",
+    "desc": "Top-shelf disposable carts from the iconic Jungle Boys brand.",
+    "slug": "jungle-boys",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 25.99
+      }
+    ]
+  },
+  {
+    "id": "muhameds",
+    "name": "Muha Meds",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/9.jpg",
+    "desc": "Premium cartridge flavours made for smooth, scaled hits.",
+    "slug": "muha-meds",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 21.99
+      }
+    ]
+  },
+  {
+    "id": "packmanvape",
+    "name": "Packman Vape",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/10.jpg",
+    "desc": "Stylish disposable vape with bold flavours and easy activation.",
+    "slug": "packman-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.19
+      },
+      {
+        "l": "3 Pack",
+        "p": 23.49
+      }
+    ]
+  },
+  {
+    "id": "packwoods",
+    "name": "Packwoods",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/11.jpg",
+    "desc": "Premium packaged carts with smooth draws and authentic strain profiles.",
+    "slug": "packwoods",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.49
+      },
+      {
+        "l": "3 Pack",
+        "p": 24.99
+      }
+    ]
+  },
+  {
+    "id": "piffbar",
+    "name": "Piff Bar",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/12.jpg",
+    "desc": "Compact disposable bar with premium terpene-rich flavour.",
+    "slug": "piff-bar",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.79
+      },
+      {
+        "l": "3 Pack",
+        "p": 24.99
+      }
+    ]
+  },
+  {
+    "id": "plugplay",
+    "name": "Plug Play",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/13.webp",
+    "desc": "Ready-to-use disposable vape with dependable flavour and smooth hits.",
+    "slug": "plug-play",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 7.79
+      },
+      {
+        "l": "3 Pack",
+        "p": 21.99
+      }
+    ]
+  },
+  {
+    "id": "rawgarden",
+    "name": "Raw Garden",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/14.jpg",
+    "desc": "Authentic Raw Garden carts delivering rich terpene flavour.",
+    "slug": "raw-garden",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 25.99
+      }
+    ]
+  },
+  {
+    "id": "shroomchocolatebars",
+    "name": "Shroom Chocolate Bars",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/15.webp",
+    "desc": "Novel edibles-inspired chocolate bar format for a premium experience.",
+    "slug": "shroom-chocolate-bars",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 9.99
+      },
+      {
+        "l": "2 Pack",
+        "p": 18.99
+      }
+    ]
+  },
+  {
+    "id": "turnpen",
+    "name": "Turn Pen",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "https://yartsland.co.uk/images/16.jpg",
+    "desc": "High-performance pen vape with strong flavour and ergonomic design.",
+    "slug": "turn-pen",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 9.29
+      },
+      {
+        "l": "2 Pack",
+        "p": 17.99
+      }
+    ]
+  },
+  {
+    "id": "zkittlez",
+    "name": "Zkittlez",
+    "cat": "disposable",
+    "badge": "",
+    "img": "https://yartsland.co.uk/images/17.jpg",
+    "desc": "Fruit-forward disposable with sweet, candy-inspired flavour notes.",
+    "slug": "zkittlez",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 8.29
+      },
+      {
+        "l": "3 Pack",
+        "p": 23.99
+      }
+    ]
+  },
+  {
+    "id": "stiiizyvape",
+    "name": "Stiiizy Vape Pod",
+    "cat": "disposable",
+    "badge": "new",
+    "img": "/images/stiiizy_vape.jpg",
+    "desc": "Premium THC vape pod with sleek black battery. Clean hits and strong potency.",
+    "slug": "stiiizy-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 29.99
+      },
+      {
+        "l": "2 Pack",
+        "p": 54.99
+      }
+    ]
+  },
+  {
+    "id": "alienlabsvape",
+    "name": "Alien Labs Disposable",
+    "cat": "disposable",
+    "badge": "hot",
+    "img": "/images/alien_labs_vape.jpg",
+    "desc": "High-quality THC disposable vape pen, neon green and black branding.",
+    "slug": "alien-labs-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 34.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 94.99
+      }
+    ]
+  },
+  {
+    "id": "bigchiefvape",
+    "name": "Big Chief Cart",
+    "cat": "disposable",
+    "badge": "",
+    "img": "/images/big_chief_vape.jpg",
+    "desc": "THC vape cartridge with wood tip and golden pure oil.",
+    "slug": "big-chief-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 19.99
+      },
+      {
+        "l": "3 Pack",
+        "p": 49.99
+      }
+    ]
+  },
+  {
+    "id": "rovevape",
+    "name": "Rove Cartridge",
+    "cat": "disposable",
+    "badge": "sale",
+    "img": "/images/rove_vape.jpg",
+    "desc": "Sleek Rove THC vape cartridge featuring strong golden oil.",
+    "slug": "rove-vape",
+    "variants": [
+      {
+        "l": "Single",
+        "p": 24.99
+      },
+      {
+        "l": "2 Pack",
+        "p": 44.99
+      }
+    ]
+  }
+]
