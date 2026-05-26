@@ -116,7 +116,7 @@ export default function Home() {
           
           <div className="relative aspect-square md:aspect-auto md:h-[600px] w-full mt-12 md:mt-0">
             <Image 
-              src="/images/premium_vape_hero.png" 
+              src="/images/hero11.jpg" 
               alt="Premium Disposable Vape UK" 
               fill
               priority
@@ -185,8 +185,8 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative aspect-auto h-[500px] w-full">
             <Image 
-              src="/images/vape_quality_control.png" 
-              alt="Vape Quality Control" 
+              src="/images/hero2.webp" 
+              alt="The Vape Hub Premium Range" 
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-2xl" 
