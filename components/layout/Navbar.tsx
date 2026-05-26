@@ -31,9 +31,12 @@ export function Navbar() {
       </div>
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <img 
+            <Image 
               src="/images/logo.png" 
               alt="The Vape Hub UK Logo" 
+              width={160}
+              height={40}
+              priority
               className="h-10 w-auto object-contain" 
             />
           </Link>

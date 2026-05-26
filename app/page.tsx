@@ -115,10 +115,13 @@ export default function Home() {
           </div>
           
           <div className="relative aspect-square md:aspect-auto md:h-[600px] w-full mt-12 md:mt-0">
-            <img 
+            <Image 
               src="/images/premium_vape_hero.png" 
               alt="Premium Disposable Vape UK" 
-              className="absolute inset-0 w-full h-full object-cover rounded-2xl border border-border/50 shadow-2xl"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover rounded-2xl border border-border/50 shadow-2xl"
               referrerPolicy="no-referrer"
             />
             <div className="absolute -bottom-6 -left-6 bg-surface border border-border p-4 rounded-xl shadow-xl flex items-center gap-4 animate-bounce" style={{animationDuration: '3s'}}>
@@ -181,10 +184,12 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-24">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative aspect-auto h-[500px] w-full">
-            <img 
+            <Image 
               src="/images/vape_quality_control.png" 
               alt="Vape Quality Control" 
-              className="absolute inset-0 w-full h-full object-cover rounded-2xl" 
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover rounded-2xl" 
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
@@ -318,10 +323,12 @@ export default function Home() {
       {/* 12. Final CTA */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-24">
           <div className="bg-primary rounded-[40px] p-12 text-center text-white relative overflow-hidden flex flex-col items-center min-h-[400px] justify-center">
-            <img
+            <Image
               src="/images/vape_wholesale_boxes.png"
               alt="Vape Wholesale"
-              className="absolute inset-0 w-full h-full object-cover opacity-30"
+              fill
+              sizes="100vw"
+              className="object-cover opacity-30"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-black/40"></div>

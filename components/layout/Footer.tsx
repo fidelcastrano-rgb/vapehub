@@ -9,9 +9,11 @@ export function Footer() {
           
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <img 
+              <Image 
                 src="/images/logo.png" 
                 alt="The Vape Hub UK Logo" 
+                width={160}
+                height={40}
                 className="h-10 w-auto object-contain" 
               />
             </Link>

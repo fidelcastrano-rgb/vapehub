@@ -35,24 +35,28 @@ export function ProductContent({ product }: { product: any }) {
         <div className="flex flex-col gap-4">
           <div className="relative aspect-square bg-surface border border-border rounded-3xl overflow-hidden">
             <div className="absolute top-4 right-4 z-10 opacity-70 w-16 h-16 pointer-events-none">
-              <img 
+              <Image 
                 src="/images/logo.png"
                 alt="The Vape Hub UK"
-                className="w-full h-full object-contain drop-shadow-md"
+                fill
+                className="object-contain drop-shadow-md"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <img 
+            <Image 
               src={product.image} 
               alt={product.name} 
-              className="absolute inset-0 w-full h-full object-cover" 
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover" 
               referrerPolicy="no-referrer" 
             />
           </div>
           <div className="grid grid-cols-3 gap-4">
-            <div className="relative aspect-square border border-primary rounded-xl overflow-hidden cursor-pointer"><img src={product.image} alt={product.name} className="absolute inset-0 w-full h-full object-cover" referrerPolicy="no-referrer" /></div>
-            <div className="relative aspect-square border border-border bg-surface rounded-xl overflow-hidden cursor-pointer"><img src={product.image} alt={product.name} className="absolute inset-0 w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" /></div>
-            <div className="relative aspect-square border border-border bg-surface rounded-xl overflow-hidden cursor-pointer"><img src={product.image} alt={product.name} className="absolute inset-0 w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" /></div>
+            <div className="relative aspect-square border border-primary rounded-xl overflow-hidden cursor-pointer"><Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 33vw, 16vw" className="object-cover" referrerPolicy="no-referrer" /></div>
+            <div className="relative aspect-square border border-border bg-surface rounded-xl overflow-hidden cursor-pointer"><Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 33vw, 16vw" className="object-cover opacity-50" referrerPolicy="no-referrer" /></div>
+            <div className="relative aspect-square border border-border bg-surface rounded-xl overflow-hidden cursor-pointer"><Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 33vw, 16vw" className="object-cover opacity-50" referrerPolicy="no-referrer" /></div>
           </div>
         </div>
 

@@ -65,7 +65,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         
         <Breadcrumbs items={[
           { label: 'Blog', href: '/blog' },
-          { label: post.title }
+          { label: post?.title || 'Blog Post' }
         ]} />
         
         <div className="mb-8">

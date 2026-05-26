@@ -31,17 +31,20 @@ export function ProductCard({ product }: { product: any }) {
           </div>
         )}
         <div className="absolute top-4 right-4 z-10 opacity-70 w-12 h-12 pointer-events-none">
-          <img 
+          <Image 
             src="/images/logo.png"
             alt="The Vape Hub UK"
-            className="w-full h-full object-contain drop-shadow-md"
+            fill
+            className="object-contain drop-shadow-md"
             referrerPolicy="no-referrer"
           />
         </div>
-        <img 
+        <Image 
           src={product.image}
           alt={product.name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          className="object-cover transition-transform group-hover:scale-105"
           referrerPolicy="no-referrer"
         />
       </div>
