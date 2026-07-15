@@ -95,6 +95,29 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           
           <div className="space-y-6">
             {post.content.split('\n\n').map((para, idx) => {
+              if (para.startsWith('[IMAGE: ') && para.endsWith(']')) {
+                const inner = para.slice(8, -1);
+                const [imgSrc, caption] = inner.split('|');
+                return (
+                  <div key={idx} className="my-10 space-y-3">
+                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-border shadow-2xl">
+                      <Image 
+                        src={imgSrc} 
+                        alt={caption || post.title} 
+                        fill 
+                        sizes="(max-width: 768px) 100vw, 800px" 
+                        className="object-cover" 
+                        referrerPolicy="no-referrer" 
+                      />
+                    </div>
+                    {caption && (
+                      <p className="text-center text-xs text-gray-500 font-mono italic">
+                        {caption}
+                      </p>
+                    )}
+                  </div>
+                );
+              }
               if (para.startsWith('### ')) {
                 return (
                   <h3 key={idx} className="text-2xl font-bold font-space-grotesk text-white mt-8 mb-4">
