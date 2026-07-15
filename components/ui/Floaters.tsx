@@ -1,13 +1,12 @@
 'use client';
 import { useOrder } from '@/lib/order-context';
-import { ShoppingBag, X, MessageCircle } from 'lucide-react';
+import { ShoppingBag, X, MessageCircle, CreditCard, ShieldCheck } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const shippingOptions = [
-  { id: 'tracked-24', name: 'Royal Mail Tracked 24', price: 4.99, description: 'Next Day UK' },
-  { id: 'tracked-48', name: 'Royal Mail Tracked 48', price: 3.50, description: '2-3 Days UK' },
-  { id: 'special-delivery', name: 'Special Delivery by 1pm', price: 8.99, description: 'Guaranteed Next Day' },
-  { id: 'international', name: 'International Tracked Worldwide', price: 14.99, description: '5-7 Days Global' },
+  { id: 'normal', name: 'Normal Shipping', price: 12.00, description: 'Standard (2-3 Days)' },
+  { id: 'express', name: 'Express Shipping', price: 60.00, description: 'VIP Next Day Discreet' },
 ];
 
 export function Floaters() {
@@ -17,8 +16,9 @@ export function Floaters() {
   const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
-  const [paymentMethod, setPaymentMethod] = useState('Crypto (USDT / USDC / BTC / ETH)');
-  const [shippingOption, setShippingOption] = useState('tracked-24');
+  const [paymentMethod, setPaymentMethod] = useState('Crypto');
+  const [shippingOption, setShippingOption] = useState('normal');
+
 
   // Trigger drawer top open auto as soon as products list changes length and items are added
   useEffect(() => {
@@ -199,17 +199,21 @@ export function Floaters() {
                   <label className="block text-[11px] text-zinc-400 mb-1 font-medium">Choose Payment Method</label>
                   <select 
                     value={paymentMethod} 
-                    onChange={e => setPaymentMethod(e.target.value)}
+                    onChange={e => {
+                      const val = e.target.value;
+                      if (val === 'Bank Transfer' && total < 100) return;
+                      setPaymentMethod(val);
+                    }}
                     className="bg-[#18181b] text-white border border-border/80 rounded p-2 text-sm w-full outline-none focus:border-primary transition cursor-pointer mb-2"
                   >
-                    <option value="Crypto (USDT / USDC / BTC / ETH)" className="bg-zinc-950 text-white">Crypto (USDT / USDC / BTC / ETH)</option>
-                    <option value="Bank Transfer (Min £100)" className="bg-zinc-950 text-white">Bank Transfer (Strictly Orders Over £100)</option>
-                    <option value="Western Union / MoneyGram" className="bg-zinc-950 text-white">Western Union / MoneyGram</option>
+                    <option value="Crypto" className="bg-zinc-950 text-white">Crypto (Preferred)</option>
+                    <option value="Gift Card" className="bg-zinc-950 text-white">Gift Card (Preferred)</option>
+                    <option value="Bank Transfer" disabled={total < 100} className="bg-zinc-950 text-white disabled:opacity-40">Bank Transfer {total < 100 ? '(Locked < £100)' : ''}</option>
                   </select>
                 </div>
 
                 {/* Info Text Boxes */}
-                {paymentMethod.includes('Crypto') && (
+                {paymentMethod === 'Crypto' && (
                   <div className="text-xs text-gray-400 leading-relaxed bg-[#18181b] p-3 rounded-lg border border-border">
                     <div className="font-bold text-gray-200 mb-1">Supported Coins:</div>
                     <ul className="list-disc pl-4 mb-2 space-y-1">
@@ -220,17 +224,17 @@ export function Floaters() {
                   </div>
                 )}
 
-                {paymentMethod.includes('Bank') && (
+                {paymentMethod === 'Gift Card' && (
                   <div className="text-xs text-gray-400 leading-relaxed bg-[#18181b] p-3 rounded-lg border border-border">
-                    <p className="text-yellow-400 font-bold mb-1">Limit Restriction:</p>
-                    <p>Due to industry classification regulations, direct bank transfer is exclusively restricted to wholesale/bulk orders exceeding <span className="font-bold text-white">£100</span>.</p>
+                    <p className="font-bold text-gray-200 mb-1">Gift Card (Preferred):</p>
+                    <p>We accept digital Amazon UK, Apple UK, and Steam UK Gift Cards. Excellent for private vape orders.</p>
                   </div>
                 )}
 
-                {paymentMethod.includes('Western') && (
+                {paymentMethod === 'Bank Transfer' && (
                   <div className="text-xs text-gray-400 leading-relaxed bg-[#18181b] p-3 rounded-lg border border-border">
-                    <p className="font-bold text-gray-200 mb-1">Remittance Instruction:</p>
-                    <p>Once you submit the order, the payment details for Western Union or MoneyGram transfer will be provided details instantly.</p>
+                    <p className="text-yellow-400 font-bold mb-1">Direct Bank Wire:</p>
+                    <p>Direct bank wire is restricted to orders exceeding <span className="font-bold text-white">£100</span> due to industry regulations.</p>
                   </div>
                 )}
               </div>
@@ -239,7 +243,7 @@ export function Floaters() {
 
           {/* Footer */}
           {orderOpen && (
-            <div className="p-4 border-t border-border bg-[#18181b] rounded-b-xl flex flex-col gap-3 shrink-0">
+            <div className="p-4 border-t border-border bg-[#18181b] rounded-b-xl flex flex-col gap-2 shrink-0">
               <div className="space-y-1 text-sm border-b border-border/40 pb-2">
                 <div className="flex justify-between text-zinc-400">
                   <span>Subtotal</span>
@@ -251,23 +255,36 @@ export function Floaters() {
                 </div>
                 <div className="flex justify-between font-bold text-white text-base pt-1">
                   <span>Grand Total</span>
-                  <span className="text-primary">£{grandTotal.toFixed(2)}</span>
+                  <span className="text-primary font-space-grotesk">£{grandTotal.toFixed(2)}</span>
                 </div>
               </div>
 
-              <button 
-                onClick={handleWhatsApp}
-                className="w-full bg-whatsapp text-white py-2.5 rounded-lg font-bold text-sm hover:opacity-90 transition flex items-center justify-center gap-2"
+              <Link 
+                href="/checkout"
+                onClick={() => setOrderOpen(false)}
+                className="w-full bg-primary hover:bg-primary-hover text-white py-2.5 rounded-lg font-bold text-sm text-center transition flex items-center justify-center gap-2"
               >
-                <MessageCircle className="w-4 h-4" />
-                Submit Order via WhatsApp
-              </button>
-              <button 
-                onClick={handleEmail}
-                className="w-full bg-zinc-800 hover:bg-zinc-700 text-white py-2 rounded-lg font-bold text-sm transition"
-              >
-                Submit Order via Email
-              </button>
+                <ShieldCheck className="w-4 h-4" />
+                Proceed to Secure Checkout
+              </Link>
+              <div className="text-[10px] text-gray-500 text-center">
+                Or submit quick shortcuts via:
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <button 
+                  onClick={handleWhatsApp}
+                  className="bg-whatsapp hover:bg-green-600 text-white py-1.5 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  WhatsApp
+                </button>
+                <button 
+                  onClick={handleEmail}
+                  className="bg-zinc-800 hover:bg-zinc-700 text-white py-1.5 rounded-lg font-bold text-xs transition"
+                >
+                  Email Order
+                </button>
+              </div>
             </div>
           )}
         </div>

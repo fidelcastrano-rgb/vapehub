@@ -8,91 +8,215 @@ import { ProductCard } from '@/components/ui/ProductCard';
 import { AccordionItem } from '@/components/ui/AccordionItem';
 
 export const metadata: Metadata = {
-  title: 'THE VAPE HUB UK | Premium Wholesale & Retail',
-  description: "UK's Most Trusted Vape Wholesaler and Retailer Supplier. Premium cannabis and THC vape pens, carts, and disposables.",
+  title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
+  description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
   alternates: {
     canonical: 'https://thevapehub.co.uk/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
+    description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
+    url: 'https://thevapehub.co.uk/',
+    siteName: 'The Vape Hub UK',
+    images: [
+      {
+        url: 'https://thevapehub.co.uk/images/premium_vape_hero.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Vape Hub UK - DMT Vapes, Lost Mary Vape, Elf Bar & Hayati Series',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
+    description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
+    images: ['https://thevapehub.co.uk/images/premium_vape_hero.png'],
   },
 };
 
 export default function Home() {
   const featuredProducts = products.slice(0, 12);
-  const homeFaqs = faqs.flatMap(f => f.questions).slice(0, 5);
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "The Vape Hub UK",
-    "url": "https://thevapehub.co.uk",
-    "logo": "https://thevapehub.co.uk/images/logo.png",
-    "image": "https://thevapehub.co.uk/images/premium_vape_hero.png",
-    "description": "UK's Most Trusted Vape Wholesaler and Retailer. Sourcing authentic disposable vapes, pod kits, and e-liquids across London, Manchester, Belfast, and Birmingham.",
-    "telephone": "+447341056054",
-    "email": "sales@thevapehub.co.uk",
-    "priceRange": "££",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "London",
-      "addressRegion": "Greater London",
-      "addressCountry": "GB"
+  const homepageSchemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://thevapehub.co.uk/#organization",
+      "name": "The Vape Hub UK",
+      "url": "https://thevapehub.co.uk",
+      "logo": "https://thevapehub.co.uk/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+447341056054",
+        "contactType": "customer service",
+        "email": "sales@thevapehub.co.uk",
+        "areaServed": "GB",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://t.me/TheVapeHubUK"
+      ]
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 51.5074,
-      "longitude": -0.1278
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://thevapehub.co.uk/#website",
+      "name": "The Vape Hub UK",
+      "url": "https://thevapehub.co.uk",
+      "publisher": {
+        "@id": "https://thevapehub.co.uk/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://thevapehub.co.uk/products?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "08:00",
-      "closes": "22:00"
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://thevapehub.co.uk/#webpage",
+      "name": "DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK",
+      "url": "https://thevapehub.co.uk",
+      "description": "Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.",
+      "isPartOf": {
+        "@id": "https://thevapehub.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://thevapehub.co.uk/#organization"
+      }
     },
-    "areaServed": [
-      { "@type": "City", "name": "London" },
-      { "@type": "City", "name": "Belfast" },
-      { "@type": "City", "name": "Manchester" },
-      { "@type": "City", "name": "Birmingham" },
-      { "@type": "City", "name": "Leeds" },
-      { "@type": "City", "name": "Glasgow" },
-      { "@type": "Country", "name": "United Kingdom" }
-    ],
-    "sameAs": [
-      "https://t.me/TheVapeHubUK"
-    ]
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://thevapehub.co.uk/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thevapehub.co.uk"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://thevapehub.co.uk/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are Lost Mary Vape devices rechargeable and legal in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, advanced big-puff devices like the Lost Mary BM6000 feature rechargeable devices via USB-C charging and a smart 10ml refill container system that complies with UK TPD limits. Single-use Lost Mary devices like the QM600 are disposable vape devices that are ready to use out of the box and do not require recharging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do Elf Bar Pods and prefilled systems compare to disposables?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elf Bar Pods are prefilled pod systems that provide a reusable, cost-effective, and eco-friendly alternative to disposable vapes. By utilizing rechargeable devices and premium nicotine salt e-liquid (such as the Elf Bar ELFLIQ range), they deliver the same rich flavour ranges and smooth throat hits at a fraction of the cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the puff count and e-liquid capacity of the Hayati Pro Max?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Hayati Pro Max is a premium draw-activated disposable vape device that offers a substantial puff count of up to 4000 puffs. It leverages advanced mesh coil technology to ensure consistent vapour production and robust flavour extraction from the first inhale to the very last."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I recharge the Hayati Pro Ultra, and how long does it last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the Hayati Pro Ultra is designed as a high-capacity rechargeable device with integrated USB-C charging. It provides a massive puff count of up to 25,000 puffs by combining a rechargeable internal battery with double-refillable e-liquid chambers, allowing you to easily swap between chambers for maximum longevity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are DMT Vapes on your store authentic and lab-tested?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our DMT Vapes are 100% authentic and sourced directly from audited production batches. Each DMT Vape Pen is built with strict quality controls, a reliable slim internal battery, and advanced safety standards to ensure smooth performance, consistent draw activation, and absolute purity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does The Vape Hub UK ensure the authenticity of its products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At The Vape Hub UK, product authenticity is our highest priority. We source directly from official, audited manufacturer batches. Every Elf Bar, Lost Mary Vape, and Hayati device features a unique, secure QR code authenticator on its packaging, allowing customers to easily verify its lab-tested authenticity before use."
+          }
+        }
+      ]
+    }
+  ];
+
+  const seoFaqs = [
+    {
+      q: "Are Lost Mary Vape devices rechargeable and legal in the UK?",
+      a: "Yes, advanced big-puff devices like the Lost Mary BM6000 feature rechargeable devices via USB-C charging and a smart 10ml refill container system that complies with UK TPD limits. Single-use Lost Mary devices like the QM600 are disposable vape devices that are ready to use out of the box and do not require recharging."
+    },
+    {
+      q: "How do Elf Bar Pods and prefilled systems compare to disposables?",
+      a: "Elf Bar Pods are prefilled pod systems that provide a reusable, cost-effective, and eco-friendly alternative to disposable vapes. By utilizing rechargeable devices and premium nicotine salt e-liquid (such as the Elf Bar ELFLIQ range), they deliver the same rich flavour ranges and smooth throat hits at a fraction of the cost."
+    },
+    {
+      q: "What is the puff count and e-liquid capacity of the Hayati Pro Max?",
+      a: "The Hayati Pro Max is a premium draw-activated disposable vape device that offers a substantial puff count of up to 4000 puffs. It leverages advanced mesh coil technology to ensure consistent vapour production and robust flavour extraction from the first inhale to the very last."
+    },
+    {
+      q: "Can I recharge the Hayati Pro Ultra, and how long does it last?",
+      a: "Yes, the Hayati Pro Ultra is designed as a high-capacity rechargeable device with integrated USB-C charging. It provides a massive puff count of up to 25,000 puffs by combining a rechargeable internal battery with double-refillable e-liquid chambers, allowing you to easily swap between chambers for maximum longevity."
+    },
+    {
+      q: "How does The Vape Hub UK ensure the authenticity of its products?",
+      a: "At The Vape Hub UK, product authenticity is our highest priority. We source directly from official, audited manufacturer batches. Every Elf Bar, Lost Mary Vape, and Hayati device features a unique, secure QR code authenticator on its packaging, allowing customers to easily verify its lab-tested authenticity before use."
+    },
+    {
+      q: "Are the DMT Vapes authentic and how do they perform?",
+      a: "Yes, the DMT Vape Pen at The Vape Hub UK is fully verified, authentic, and sourced directly from audited manufacturer batches. It is designed as a premium, slim-battery disposable vape pen engineered with advanced safety features and smooth airflow to deliver clean, robust, and consistent performance with every puff."
+    }
+  ];
 
   return (
     <div className="w-full">
-      <Script id="homepage-entity-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <Script id="homepage-entity-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchemas) }} />
       {/* 3. Hero Section */}
       <section className="relative overflow-hidden min-h-[90vh] flex items-center pt-10">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden flex items-center justify-center opacity-5">
-          <h1 className="text-[20vw] font-bold whitespace-nowrap leading-none select-none text-white font-space-grotesk tracking-tighter mix-blend-overlay">
+          <div className="text-[20vw] font-bold whitespace-nowrap leading-none select-none text-white font-space-grotesk tracking-tighter mix-blend-overlay">
             THE VAPE HUB
-          </h1>
+          </div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full z-10 grid md:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col items-start gap-6">
-          <div className="flex items-center gap-2 bg-surface border border-border px-4 py-1.5 rounded-full text-sm font-medium">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            UK&apos;s Most Trusted Wholesaler
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk leading-tight tracking-tight">
-              Premium <span className="text-primary">Vape</span> & <br />Distillate Supply.
+          <div className="flex flex-col items-start gap-6">
+            <div className="flex items-center gap-2 bg-surface border border-border px-4 py-1.5 rounded-full text-sm font-medium">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              UK&apos;s Most Trusted Supplier
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-space-grotesk leading-tight tracking-tight">
+              Authentic <span className="text-primary">DMT Vapes</span>, Lost Mary, Elf Bar &amp; Hayati.
             </h1>
             
             <p className="text-lg text-gray-400 md:max-w-lg leading-relaxed">
-              Serving London, Northern Ireland and all of UK. Strict verification. Guaranteed authentic stock.
+              Find fully verified, lab-tested stock of premium DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra. Sourced directly, dispatched next day across London and the UK.
             </p>
             
             <div className="flex flex-wrap items-center gap-4 mt-4">
@@ -106,10 +230,10 @@ export default function Home() {
             
             <div className="flex items-center gap-6 mt-8 opacity-75">
               <div className="flex items-center gap-2 text-sm font-medium">
-                <ShieldCheck className="w-5 h-5 text-whatsapp" /> 100% Authentic
+                <ShieldCheck className="w-5 h-5 text-whatsapp" /> 100% Authentic QR Verified
               </div>
               <div className="flex items-center gap-2 text-sm font-medium">
-                <Truck className="w-5 h-5 text-whatsapp" /> Next Day Delivery
+                <Truck className="w-5 h-5 text-whatsapp" /> Next Day UK Dispatch
               </div>
             </div>
           </div>
@@ -117,7 +241,8 @@ export default function Home() {
           <div className="relative aspect-square md:aspect-auto md:h-[600px] w-full mt-12 md:mt-0">
             <Image 
               src="/images/hero11.jpg" 
-              alt="Premium Disposable Vape UK" 
+              alt="Buy Authentic Lost Mary Vape and Elf Bar Pods in UK" 
+              title="The Vape Hub Premium Brands"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -128,7 +253,7 @@ export default function Home() {
                <div className="bg-primary p-2 rounded-full"><Star className="w-6 h-6 text-white"/></div>
                <div>
                  <div className="font-bold text-lg leading-none">4.9/5</div>
-                 <div className="text-xs text-gray-400">Based on 2,000+ Reviews</div>
+                 <div className="text-xs text-gray-400">Based on 2,000+ Verified Reviews</div>
                </div>
             </div>
           </div>
@@ -152,7 +277,7 @@ export default function Home() {
               </div>
             </div>
             <div className="shrink-0 flex items-center justify-center bg-white text-[#229ED9] font-bold px-8 py-4 rounded-xl shadow-lg group-hover:bg-gray-50 transition-colors">
-              <span>View & Join Channel</span>
+              <span>View &amp; Join Channel</span>
               <span className="ml-2" aria-hidden="true">&rarr;</span>
             </div>
           </div>
@@ -164,19 +289,23 @@ export default function Home() {
         <div className="flex gap-12 items-center scrolling-marquee font-bold text-xl tracking-wider text-gray-500 uppercase">
              <span>🚀 Next Day UK Dispatch</span>
              <span>•</span>
-             <span>🛡️ Lab Tested Products</span>
+             <span>🛡️ 100% Authentic Brand Stock</span>
              <span>•</span>
-             <span>💨 4000+ Puffs Range</span>
+             <span>⚡ Premium DMT Vapes</span>
              <span>•</span>
-             <span>💎 Wholesale Pricing</span>
+             <span>💨 Lost Mary Vape &amp; Elf Bar</span>
+             <span>•</span>
+             <span>💎 Hayati Pro Max &amp; Ultra</span>
              <span>•</span>
              <span>🚀 Next Day UK Dispatch</span>
              <span>•</span>
-             <span>🛡️ Lab Tested Products</span>
+             <span>🛡️ 100% Authentic Brand Stock</span>
              <span>•</span>
-             <span>💨 4000+ Puffs Range</span>
+             <span>⚡ Premium DMT Vapes</span>
              <span>•</span>
-             <span>💎 Wholesale Pricing</span>
+             <span>💨 Lost Mary Vape &amp; Elf Bar</span>
+             <span>•</span>
+             <span>💎 Hayati Pro Max &amp; Ultra</span>
         </div>
       </section>
 
@@ -186,7 +315,8 @@ export default function Home() {
           <div className="relative aspect-auto h-[500px] w-full">
             <Image 
               src="/images/hero2.webp" 
-              alt="The Vape Hub Premium Range" 
+              alt="Hayati Pro Max and Lost Mary Vape Selection" 
+              title="Premium Vape Quality Control"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-2xl" 
@@ -194,24 +324,24 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
           </div>
-        <div>
-          <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mb-6">Engineered for <br/>Maximum Precision.</h2>
-          <p className="text-gray-400 leading-relaxed max-w-lg mb-8">
-            We don&apos;t do cheap knock-offs. Every product on our shelves is verified via QR code authenticator before dispatch. If it doesn&apos;t meet our strict standards, it doesn&apos;t get sold.
-          </p>
-          <ul className="space-y-4">
+          <div>
+            <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mb-6">Premium Vaping Experience, Guaranteed.</h2>
+            <p className="text-gray-400 leading-relaxed max-w-lg mb-8">
+              We focus on delivering high-performance disposable vape devices, slim pens, and prefilled pod systems that represent the pinnacle of industry standards. Every DMT Vape Pen, Lost Mary Vape, Elf Bar, and Hayati Pro Max is checked via strict authenticators, ensuring you receive 100% genuine devices.
+            </p>
+            <ul className="space-y-4">
               <li className="flex items-start gap-4 p-4 rounded-xl bg-surface border border-border">
                 <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
                 <div>
-                  <h4 className="font-bold mb-1">COA Verified Distillate</h4>
-                  <p className="text-sm text-gray-400">All THC and CBD products undergo full panel lab testing.</p>
+                  <h3 className="font-bold mb-1 text-white">Full-Spectrum Product Authenticity</h3>
+                  <p className="text-sm text-gray-400">Zero compromises. Sourced strictly from audited manufacturing batches with batch-tested verification certificates for all DMT Vapes and premium disposable devices.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4 p-4 rounded-xl bg-surface border border-border">
                 <Zap className="w-6 h-6 text-primary shrink-0" />
                 <div>
-                  <h4 className="font-bold mb-1">Advanced Mesh Coils</h4>
-                  <p className="text-sm text-gray-400">Experience richer flavor profiles and zero burnt hits.</p>
+                  <h3 className="font-bold mb-1 text-white">Advanced Mesh Coil &amp; Battery Tech</h3>
+                  <p className="text-sm text-gray-400">Featured in Hayati Pro Max, Lost Mary Vape, and our slim-battery DMT Vape Pens to unlock exceptional consistency, rich vapor, and eliminate dry hits.</p>
                 </div>
               </li>
             </ul>
@@ -255,66 +385,169 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 9.5. Buying Guide & Comparison Section */}
+      <section className="max-w-7xl mx-auto px-4 md:px-8 py-24 border-t border-border">
+        <div className="mb-12">
+          <span className="text-xs text-primary font-bold uppercase tracking-wider">Expert Advice</span>
+          <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mt-2 mb-4">Device Comparison &amp; Buying Guide</h2>
+          <p className="text-gray-400 max-w-2xl">
+            Struggling to choose between a premium **DMT Vape**, a compact **Lost Mary Vape**, a traditional **Elf Bar**, or the long-lasting **Hayati Pro Ultra**? Our side-by-side comparison simplifies your purchase decision.
+          </p>
+        </div>
+
+        <div className="overflow-x-auto rounded-2xl border border-border bg-surface">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="border-b border-border bg-background/50">
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Device Model</th>
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Device Type</th>
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Puff Count</th>
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Battery &amp; Charging</th>
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Key Feature</th>
+                <th className="p-4 text-xs font-bold uppercase tracking-wider text-gray-400">Best Suited For</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border text-sm">
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products/dmt-vape-pen" className="hover:text-primary transition">DMT Vape Pen</Link>
+                </td>
+                <td className="p-4 text-gray-300">Slim-Battery Disposable</td>
+                <td className="p-4 text-primary font-bold">Premium Delivery</td>
+                <td className="p-4 text-gray-300">Integrated battery (Draw-Activated)</td>
+                <td className="p-4 text-gray-300">Slim form factor, leak-proof safety seals</td>
+                <td className="p-4 text-gray-300">Users seeking highly reliable, premium, and authentic slim-profile devices.</td>
+              </tr>
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products/lost-mary-bm6000" className="hover:text-primary transition">Lost Mary Vape (BM6000)</Link>
+                </td>
+                <td className="p-4 text-gray-300">Big-Puff Disposable</td>
+                <td className="p-4 text-primary font-bold">Up to 6,000</td>
+                <td className="p-4 text-gray-300">650mAh (Rechargeable, USB-C)</td>
+                <td className="p-4 text-gray-300">Smart 10ml auto-feed container</td>
+                <td className="p-4 text-gray-300">Flavour enthusiasts wanting legal high-capacity options.</td>
+              </tr>
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products/elf-bar-600" className="hover:text-primary transition">Elf Bar 600</Link>
+                </td>
+                <td className="p-4 text-gray-300">Single-Use Disposable</td>
+                <td className="p-4 text-primary font-bold">Up to 600</td>
+                <td className="p-4 text-gray-300">360mAh (Pre-charged)</td>
+                <td className="p-4 text-gray-300">Classic draw activation</td>
+                <td className="p-4 text-gray-300">Beginners or vapers looking for pocket-sized simplicity.</td>
+              </tr>
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products" className="hover:text-primary transition">Elf Bar Pods (Prefilled)</Link>
+                </td>
+                <td className="p-4 text-gray-300">Prefilled Pod System</td>
+                <td className="p-4 text-primary font-bold">Infinite (Reusable device)</td>
+                <td className="p-4 text-gray-300">Rechargeable (Device sold separately)</td>
+                <td className="p-4 text-gray-300">Eco-friendly magnetic click-fit pods</td>
+                <td className="p-4 text-gray-300">Daily users wanting to reduce environmental impact.</td>
+              </tr>
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products/hayati-pro-max" className="hover:text-primary transition">Hayati Pro Max</Link>
+                </td>
+                <td className="p-4 text-gray-300">Premium Mid-Capacity</td>
+                <td className="p-4 text-primary font-bold">Up to 4,000</td>
+                <td className="p-4 text-gray-300">1400mAh (Non-rechargeable)</td>
+                <td className="p-4 text-gray-300">Mesh coil technology</td>
+                <td className="p-4 text-gray-300">Consistent, rich vapor and bold flavour ranges.</td>
+              </tr>
+              <tr className="hover:bg-background/20 transition">
+                <td className="p-4 font-bold text-white">
+                  <Link href="/products/hayati-pro-ultra-25k" className="hover:text-primary transition">Hayati Pro Ultra</Link>
+                </td>
+                <td className="p-4 text-gray-300">High-Puff Dual-Tank</td>
+                <td className="p-4 text-primary font-bold">Up to 25,000</td>
+                <td className="p-4 text-gray-300">850mAh (Rechargeable, USB-C)</td>
+                <td className="p-4 text-gray-300">Dual 12ml prefilled chambers</td>
+                <td className="p-4 text-gray-300">Heavy vapers searching for unmatched longevity.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* 10. Brand Focus / SEO Text */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-24">
         <div className="bg-surface rounded-[40px] border border-border p-8 md:p-16">
           <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mb-6">Built Around The Brands You Want.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mb-6">UK&apos;s Leading Supplier of Premium Brands.</h2>
             <p className="text-lg text-gray-400 leading-relaxed mb-6">
-              Welcome to The Vape Hub, where we keep our focus on the products shoppers actually want. If you are looking for Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, or Hayati Pro Ultra, you are in the right place. We stock the brands that customers ask for most, and we keep the site built around clear choices, easy ordering, and a simple buying experience.
+              Welcome to The Vape Hub UK, the ultimate online supply house designed around the exact products and brands you search for. We understand that finding genuine **DMT Vapes**, **Lost Mary Vape**, **Elf Bar**, **Elf Bar Pods**, **Hayati Pro Max**, and **Hayati Pro Ultra** can be a challenge with so many cheap imitations online. That is why we commit to 100% product authenticity, lab-tested security, and next-day UK delivery.
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              At The Vape Hub, we know what matters to vape shoppers. You want trusted products, strong flavour, reliable performance, and a shop that makes the process straightforward. That is exactly how we run our business. We built our store for customers who want a direct route to the latest disposable vapes and pod products without wasting time.
+              Whether you are an individual shopper looking to buy a couple of devices or a retail store operator looking for competitive wholesale pricing, we structure our collections to facilitate easy browsing and fast checkouts. No fluff, no endless search walls. Just clean layouts, real specifications, and reliable deliveries.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-background rounded-2xl p-8 border border-border group hover:border-primary/50 transition">
-              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Lost Mary Vape</h3>
+              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">DMT Vapes</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-4">
+                The **DMT Vapes** selection is built for users who prioritize absolute purity, robust hardware, and reliable delivery. Sourced strictly from verified production lines, these slim pens feature top-tier safety mechanisms.
+              </p>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Lost Mary Vape remains one of the most popular choices on our site because customers trust the brand and know what to expect. It is known for compact design, rich flavour, and easy use. Many shoppers come back to Lost Mary Vape because they want a device that works well and delivers a smooth experience from the first puff to the last.
+                Each <Link href="/products/dmt-vape-pen" className="text-primary hover:underline font-bold">DMT Vape Pen</Link> is fully checked to offer exceptionally smooth draws, long battery life, and complete satisfaction for collectors and daily users seeking authentic, premium-grade builds.
               </p>
             </div>
 
             <div className="bg-background rounded-2xl p-8 border border-border group hover:border-primary/50 transition">
-              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Elf Bar & Pods</h3>
+              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Lost Mary Vape</h3>
               <p className="text-gray-400 leading-relaxed text-sm mb-4">
-                Elf Bar is another major part of our range. It continues to be one of the most searched names in vaping because of its familiar design and broad flavour appeal. Customers who shop with us for Elf Bar products usually want a device that is simple to use and easy to enjoy. We keep Elf Bar in stock because we know it is a name people search for with intention.
+                The **Lost Mary Vape** range represents a breakthrough in both visual elegance and flavour consistency. Known for their pocket-friendly, ergonomic designs, these devices rely on sophisticated mesh coil technology to fully vaporize premium nicotine salt e-liquid.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Elf Bar Pods are also an important part of what we offer. Some customers prefer pods over disposables, and we make sure those buyers have access to the right options. When people search for Elf Bar Pods, they are usually looking for convenience, compatibility, and a product they can rely on. We aim to make that search easy by keeping our product pages clear and our stock organised.
+                From the classic Lost Mary QM600 to the high-capacity, TPD-compliant <Link href="/products/lost-mary-bm6000" className="text-primary hover:underline font-bold">Lost Mary BM6000</Link> offering a generous puff count of 6000, we maintain a complete inventory of outstanding flavour ranges. Explore smooth hits, quick draw activation, and consistent output.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 border border-border group hover:border-primary/50 transition">
+              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Elf Bar &amp; Elf Bar Pods</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-4">
+                The name **Elf Bar** has become synonymous with hassle-free vaping. The <Link href="/products/elf-bar-600" className="text-primary hover:underline font-bold">Elf Bar 600</Link> is celebrated for its lightweight, cylindrical chassis and extensive selection of crisp fruit, menthol, and soda profiles.
+              </p>
+              <p className="text-gray-400 leading-relaxed text-sm">
+                For a more sustainable and wallet-friendly setup, vapers are increasingly turning to **Elf Bar Pods**. These prefilled pod systems combine a reusable, rechargeable device with modular, magnetic pods, filled with the famous ELFLIQ nicotine salt e-liquid to preserve the legendary flavor profile without waste.
               </p>
             </div>
 
             <div className="bg-background rounded-2xl p-8 border border-border group hover:border-primary/50 transition lg:mt-0 md:mt-4">
-              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Hayati Series</h3>
+              <h3 className="text-xl font-bold font-space-grotesk text-white mb-4">Hayati Pro Max &amp; Ultra</h3>
               <p className="text-gray-400 leading-relaxed text-sm mb-4">
-                Hayati Pro Max has quickly become one of the standout products in the market. Shoppers choose it because they want a high puff vape with strong flavour and modern design. At The Vape Hub, we make Hayati Pro Max easy to find because it is one of the products our customers ask for most. It fits the needs of buyers who want a longer lasting disposable and a more premium feel.
+                The Hayati range is designed for those who demand superior build quality and bold styling. The <Link href="/products/hayati-pro-max" className="text-primary hover:underline font-bold">Hayati Pro Max</Link> provides an unmatched draw-activated experience, featuring a crystal-clear outer body, advanced airflow, and up to 4000 puffs of pure flavour.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Hayati Pro Ultra is another popular option for customers who want more from their vape. It appeals to shoppers who want a larger capacity device, strong flavour output, and a device that feels current. We stock Hayati Pro Ultra for the same reason we stock our other top brands. Our customers want the products that are trending now, and we keep our store matched to that demand.
+                For heavy users looking to maximize longevity, the <Link href="/products/hayati-pro-ultra-25k" className="text-primary hover:underline font-bold">Hayati Pro Ultra</Link> introduces a massive 25,000 puff capacity. This rechargeable device utilizes USB-C charging and an ingenious double-chamber rotating pod structure, allowing you to flip flavours and chambers instantly.
               </p>
             </div>
           </div>
 
           <div className="mt-16 pt-16 border-t border-border/50 text-center max-w-3xl mx-auto text-sm text-gray-500 font-medium">
             <p className="mb-4">
-              The Vape Hub is built around the idea that shopping should be simple. No clutter. No confusion. Just the products you want, presented clearly, with an easy path to order. We know customers compare brands and look for the best option before they buy, so we keep our categories focused and our range relevant.
+              The Vape Hub UK is structured around standardizing the online buying experience. We provide a clean, secure environment where customers can quickly analyze, compare, and order the exact products they require. By managing our supply chains directly and conducting thorough product audits, we protect you from counterfeit or faulty stock.
             </p>
             <p>
-              If you are looking for Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, or Hayati Pro Ultra, The Vape Hub gives you one place to browse trusted products and make a straightforward purchase. We keep our business focused on the brands shoppers search for most, because that is what our customers expect from us.
+              If your daily setup relies on a **DMT Vape**, a **Lost Mary Vape**, a standard **Elf Bar**, a modular **Elf Bar Pods** system, or the durable **Hayati Pro Max** and **Hayati Pro Ultra**, we are your trusted UK source. Shop today and experience why we maintain an excellent reputation for product knowledge and customer support.
             </p>
           </div>
         </div>
       </section>
 
       {/* 11. FAQ */}
-      <section className="max-w-4xl mx-auto px-4 md:px-8 py-24">
+      <section className="max-w-4xl mx-auto px-4 md:px-8 py-24 border-t border-border">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mb-4">Common Questions</h2>
+          <span className="text-xs text-primary font-bold uppercase tracking-wider">Got Questions?</span>
+          <h2 className="text-3xl md:text-5xl font-bold font-space-grotesk mt-2 mb-4">Frequently Asked Questions</h2>
+          <p className="text-gray-400">Everything you need to know about our premium selection, compatibility, and ordering policies.</p>
         </div>
         <div className="flex flex-col gap-4">
-          {homeFaqs.map((faq, i) => (
+          {seoFaqs.map((faq, i) => (
             <AccordionItem key={i} question={faq.q} answer={faq.a} />
           ))}
         </div>
@@ -325,16 +558,17 @@ export default function Home() {
           <div className="bg-primary rounded-[40px] p-12 text-center text-white relative overflow-hidden flex flex-col items-center min-h-[400px] justify-center">
             <Image
               src="/images/vape_wholesale_boxes.png"
-              alt="Vape Wholesale"
+              alt="Wholesale Elf Bar and Lost Mary Vape Supply UK"
+              title="Bulk Vape Supplies Warehouse"
               fill
               sizes="100vw"
               className="object-cover opacity-30"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-black/40"></div>
-           <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk z-10 mb-6">Restock Fast & Secure.</h2>
+           <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk z-10 mb-6">Restock Fast &amp; Secure.</h2>
            <p className="z-10 max-w-xl mx-auto text-lg mb-10 opacity-90">
-             Whether you need a single disposable or a wholesale bulk package, The Vape Hub UK is your trusted source. 
+             Whether you need a single disposable or a wholesale bulk package, The Vape Hub UK is your trusted source for authentic **DMT Vapes**, **Lost Mary Vape**, **Elf Bar**, **Elf Bar Pods**, **Hayati Pro Max**, and **Hayati Pro Ultra**. 
            </p>
            <div className="z-10 flex gap-4">
              <Link href="/products" className="bg-background text-white hover:bg-gray-800 py-4 px-8 rounded-lg font-bold transition shadow-2xl">

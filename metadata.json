@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "The Vape Hub UK",
+  "description": "Authentic supplier of DMT Vapes, Lost Mary Vape, Elf Bar Pods, and Hayati series with next day UK delivery.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
