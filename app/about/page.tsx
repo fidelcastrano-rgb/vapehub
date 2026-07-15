@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'About Us | THE VAPE HUB UK',
   description: 'Learn about our mission to supply safe, premium, verified vapes in the UK.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/about',
+    canonical: 'https://www.thevapehub.co.uk/about',
   }
 };
 

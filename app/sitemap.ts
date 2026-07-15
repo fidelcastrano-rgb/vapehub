@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { products, blogPosts } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://thevapehub.co.uk';
+  const baseUrl = 'https://www.thevapehub.co.uk';
 
   // Core static pages
   const staticPages = [

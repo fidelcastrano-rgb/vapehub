@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'FAQ - Help & Support | THE VAPE HUB UK',
   description: 'Find answers to common questions about wholesale ordering, shipping, authentic products, and lab test reports.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/faq',
+    canonical: 'https://www.thevapehub.co.uk/faq',
   }
 };
 

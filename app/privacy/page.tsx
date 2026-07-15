@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | THE VAPE HUB UK',
   robots: { index: false, follow: false },
   alternates: {
-    canonical: 'https://thevapehub.co.uk/privacy',
+    canonical: 'https://www.thevapehub.co.uk/privacy',
   }
 };
 

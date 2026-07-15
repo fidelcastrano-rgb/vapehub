@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Contact Us | THE VAPE HUB UK',
   description: 'Get in touch with The Vape Hub UK via WhatsApp or Email.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/contact',
+    canonical: 'https://www.thevapehub.co.uk/contact',
   }
 };
 

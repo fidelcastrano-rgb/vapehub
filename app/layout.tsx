@@ -19,9 +19,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'THE VAPE HUB UK | Premium Wholesale & Retail',
   description: "UK's Most Trusted Vape Wholesaler and Retailer Supplier. Premium cannabis and THC vape pens, carts, and disposables.",
-  metadataBase: new URL('https://thevapehub.co.uk'),
+  metadataBase: new URL('https://www.thevapehub.co.uk'),
   alternates: {
-    canonical: 'https://thevapehub.co.uk/',
+    canonical: 'https://www.thevapehub.co.uk/',
   },
   openGraph: {
     title: 'THE VAPE HUB UK',

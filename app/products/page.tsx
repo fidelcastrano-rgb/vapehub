@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'All Products | THE VAPE HUB UK',
   description: 'Browse our full catalog of premium disposables, Pod Kits, E-Liquids, and bundles.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/products',
+    canonical: 'https://www.thevapehub.co.uk/products',
   }
 };
 

@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${post.title} | THE VAPE HUB UK`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://thevapehub.co.uk/blog/${post.slug}`,
+      canonical: `https://www.thevapehub.co.uk/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       images: [
         {
-          url: `https://thevapehub.co.uk${post.image}`,
+          url: `https://www.thevapehub.co.uk${post.image}`,
         }
       ]
     }

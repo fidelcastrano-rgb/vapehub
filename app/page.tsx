@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
   description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/',
+    canonical: 'https://www.thevapehub.co.uk/',
   },
   robots: {
     index: true,
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
     description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
-    url: 'https://thevapehub.co.uk/',
+    url: 'https://www.thevapehub.co.uk/',
     siteName: 'The Vape Hub UK',
     images: [
       {
-        url: 'https://thevapehub.co.uk/images/premium_vape_hero.png',
+        url: 'https://www.thevapehub.co.uk/images/premium_vape_hero.png',
         width: 1200,
         height: 630,
         alt: 'The Vape Hub UK - DMT Vapes, Lost Mary Vape, Elf Bar & Hayati Series',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK',
     description: 'Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.',
-    images: ['https://thevapehub.co.uk/images/premium_vape_hero.png'],
+    images: ['https://www.thevapehub.co.uk/images/premium_vape_hero.png'],
   },
 };
 
@@ -48,10 +48,10 @@ export default function Home() {
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "https://thevapehub.co.uk/#organization",
+      "@id": "https://www.thevapehub.co.uk/#organization",
       "name": "The Vape Hub UK",
-      "url": "https://thevapehub.co.uk",
-      "logo": "https://thevapehub.co.uk/images/logo.png",
+      "url": "https://www.thevapehub.co.uk",
+      "logo": "https://www.thevapehub.co.uk/images/logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+447341056054",
@@ -67,17 +67,17 @@ export default function Home() {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "@id": "https://thevapehub.co.uk/#website",
+      "@id": "https://www.thevapehub.co.uk/#website",
       "name": "The Vape Hub UK",
-      "url": "https://thevapehub.co.uk",
+      "url": "https://www.thevapehub.co.uk",
       "publisher": {
-        "@id": "https://thevapehub.co.uk/#organization"
+        "@id": "https://www.thevapehub.co.uk/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://thevapehub.co.uk/products?search={search_term_string}"
+          "urlTemplate": "https://www.thevapehub.co.uk/products?search={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
@@ -85,34 +85,34 @@ export default function Home() {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": "https://thevapehub.co.uk/#webpage",
+      "@id": "https://www.thevapehub.co.uk/#webpage",
       "name": "DMT Vapes, Lost Mary, Elf Bar Pods & Hayati | The Vape Hub UK",
-      "url": "https://thevapehub.co.uk",
+      "url": "https://www.thevapehub.co.uk",
       "description": "Buy authentic DMT Vapes, Lost Mary Vape, Elf Bar, Elf Bar Pods, Hayati Pro Max, and Hayati Pro Ultra at The Vape Hub UK. Enjoy premium flavours and next day UK delivery.",
       "isPartOf": {
-        "@id": "https://thevapehub.co.uk/#website"
+        "@id": "https://www.thevapehub.co.uk/#website"
       },
       "about": {
-        "@id": "https://thevapehub.co.uk/#organization"
+        "@id": "https://www.thevapehub.co.uk/#organization"
       }
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
-      "@id": "https://thevapehub.co.uk/#breadcrumb",
+      "@id": "https://www.thevapehub.co.uk/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://thevapehub.co.uk"
+          "item": "https://www.thevapehub.co.uk"
         }
       ]
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "@id": "https://thevapehub.co.uk/#faq",
+      "@id": "https://www.thevapehub.co.uk/#faq",
       "mainEntity": [
         {
           "@type": "Question",

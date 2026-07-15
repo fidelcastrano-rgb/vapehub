@@ -17,13 +17,13 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://thevapehub.co.uk"
+        "item": "https://www.thevapehub.co.uk"
       },
       ...items.map((item, idx) => ({
         "@type": "ListItem",
         "position": idx + 2,
         "name": item.label,
-        ...(item.href ? { "item": `https://thevapehub.co.uk${item.href}` } : {})
+        ...(item.href ? { "item": `https://www.thevapehub.co.uk${item.href}` } : {})
       }))
     ]
   };

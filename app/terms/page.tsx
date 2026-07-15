@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Terms of Use | THE VAPE HUB UK',
   robots: { index: false, follow: false },
   alternates: {
-    canonical: 'https://thevapehub.co.uk/terms',
+    canonical: 'https://www.thevapehub.co.uk/terms',
   }
 };
 

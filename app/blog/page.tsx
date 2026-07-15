@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Blog & Safety Guides | THE VAPE HUB UK',
   description: 'Latest news, statutory safety regulations, and product reviews in the UK vaping scene.',
   alternates: {
-    canonical: 'https://thevapehub.co.uk/blog',
+    canonical: 'https://www.thevapehub.co.uk/blog',
   }
 };
 
