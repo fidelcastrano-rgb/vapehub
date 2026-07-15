@@ -18,15 +18,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find(p => p.slug === resolvedParams.slug);
   if (!post) return {};
   
+  const seoTitle = `${post.title} | Vape Guides & safety | THE VAPE HUB UK`;
+  const seoDesc = `${post.excerpt} Read our comprehensive safety guide and expert analysis at THE VAPE HUB UK.`;
+
   return {
-    title: `${post.title} | THE VAPE HUB UK`,
-    description: post.excerpt,
+    title: seoTitle,
+    description: seoDesc,
     alternates: {
       canonical: `https://www.thevapehub.co.uk/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: seoTitle,
+      description: seoDesc,
       images: [
         {
           url: `https://www.thevapehub.co.uk${post.image}`,

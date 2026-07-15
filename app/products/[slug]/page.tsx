@@ -15,15 +15,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = products.find(p => p.slug === resolvedParams.slug);
   if (!product) return {};
   
+  const seoTitle = `Buy ${product.name} | Next Day UK Delivery | THE VAPE HUB UK`;
+  const seoDesc = `Purchase 100% authentic ${product.name} at THE VAPE HUB UK. Sourced from audited manufacturer batches with discreet shipping & secure payments. ${product.description.substring(0, 100)}...`;
+
   return {
-    title: `${product.name} | THE VAPE HUB UK`,
-    description: product.description.substring(0, 160).replace(/\n/g, " "),
+    title: seoTitle,
+    description: seoDesc,
     alternates: {
       canonical: `https://www.thevapehub.co.uk/products/${product.slug}`,
     },
     openGraph: {
-      title: product.name,
-      description: product.description.substring(0, 160).replace(/\n/g, " "),
+      title: seoTitle,
+      description: seoDesc,
       images: [
         {
           url: `https://www.thevapehub.co.uk${product.image}`,
